@@ -28,12 +28,12 @@ export const TokenConverter = () => {
     return(
         <div className="TokenConverter" style={{display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center", marginBottom: "auto"}}>
             <h3 style={{margin : "5px"}}>Input</h3>
-            <textarea className="input" value={input} onChange={(e) => setInput(e.target.value)} cols={93} rows={8}></textarea>
-            <button style={{marginBottom : "0px", marginTop : "20px"}} onClick={handleClick}>Umwandeln</button>
-            <h3 style={{margin : "5px"}}>Long Tokens</h3>
-            <textarea className="longtoken" value={longToken} cols={93} rows={8}></textarea>
-            <h3 style={{margin : "5px"}}>Short Tokens</h3>
-            <textarea className="shorttoken" value={shortToken} cols={93} rows={8}></textarea>
+            <textarea autoFocus className="input" value={input} style={{}} onChange={(e) => setInput(e.target.value)} cols={93} rows={2}></textarea>
+            <button style={{marginBottom : "0px", marginTop : "20px"}} onClick={handleClick}>convert</button>
+            <h3 style={{margin : "5px"}}>MIFARE Token</h3>
+            <label className="longtoken">{longToken}</label>
+            <h3 style={{margin : "5px"}}>EM4 Token</h3>
+            <label className="shorttoken">{shortToken}</label>
         </div>
     );
 }
