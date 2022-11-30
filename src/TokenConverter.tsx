@@ -28,7 +28,7 @@ export const TokenConverter = () => {
     return(
         <div className="TokenConverter" style={{display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center", marginBottom: "auto"}}>
             <h3 style={{margin : "5px"}}>Input</h3>
-            <textarea autoFocus className="input" value={input} style={{}} onChange={(e) => setInput(e.target.value)} cols={93} rows={2}></textarea>
+            <textarea autoFocus className="input" value={input} style={{resize: "none"}} onChange={(e) => setInput(e.target.value)} cols={93} rows={2}></textarea>
             <button style={{marginBottom : "0px", marginTop : "20px"}} onClick={handleClick}>convert</button>
             <h3 style={{margin : "5px"}}>MIFARE Token</h3>
             <label className="longtoken">{longToken}</label>
