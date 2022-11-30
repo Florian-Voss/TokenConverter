@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+button{
+  border: 2px solid black;
+  font-size: 22px;
+  font-weight: 500;
+  width: 150px;
+  height: 40px;
+  background-image: linear-gradient(to right, white 50%,black 0);
+  background-size: 200% 100%;
+  transition: background-position .2s ease-in-out, color .2s ease-in-out;
+  border-radius: 5px;
+}
+button:hover{
+  background-position: -100% 50%;
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+textarea{
+  font-family: Verdana;
+  outline: 2px solid red;
+  border-radius: 3px;
+}
+.input{
+  outline: 2px solid greenyellow;
+}
+
+.shorttoken:focus-within, .longtoken:focus-within{
+  caret-color: transparent;
+}
+
+h1{
+  font-family: Segoe UI;
+  text-decoration: underline;
+  color: ivory;
+}
+h3{
+  font-family: Segoe UI;
+  color: ivory;
+}
+
