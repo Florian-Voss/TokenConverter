@@ -28,10 +28,6 @@ button{
   transition: background-position .2s ease-in-out, color .2s ease-in-out;
   border-radius: 5px;
 }
-button:hover{
-  background-position: -100% 50%;
-  color: white;
-}
 .App-link {
   color: #61dafb;
 }
