@@ -16,31 +16,36 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-button{
-  border: 2px solid black;
-  font-size: 22px;
-  font-weight: 500;
-  width: 150px;
-  height: 40px;
-  background-image: linear-gradient(to right, white 50%,black 0);
-  background-size: 200% 100%;
-  transition: background-position .2s ease-in-out, color .2s ease-in-out;
-  border-radius: 5px;
-}
+
 .App-link {
   color: #61dafb;
 }
 textarea{
   font-family: Verdana;
-  outline: 2px solid red;
   border-radius: 3px;
 }
 .input{
   outline: 2px solid greenyellow;
 }
 
-.shorttoken:focus-within, .longtoken:focus-within{
-  caret-color: transparent;
+.primary-button{
+  border: 2px solid black;
+  width: 150px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #3e68ff;
+  color: #ffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  transition: 220ms all ease-in-out;
+}
+.primary-button:hover{
+  filter: brightness(80%);
+  cursor: pointer;
 }
 
 h1{

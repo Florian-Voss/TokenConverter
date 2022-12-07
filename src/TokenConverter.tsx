@@ -30,13 +30,13 @@ export const TokenConverter = () => {
         <div className="TokenConverter" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
             <h3 style={{margin : "20px"}}>Input</h3>
             <textarea autoFocus className="input" value={input} style={{resize: "none"}} onChange={(e) => { setInput(e.target.value); setLongTokens([]); setShortTokens([])}} cols={93} rows={6}></textarea>
-            <button style={{margin: "100px"}} onClick={handleClick}>Convert</button>
+            <button style={{margin: "75px"}} className="primary-button" onClick={handleClick}>Convert</button>
             <div style={{width:"100%", display: "flex", justifyContent: "space-between"}}>
                 <div style={{width:"100%", display: "flex", flexDirection: "column"}}>
                 {longTokens.length > 0 ? <h3 style={{margin: "5px"}}>MIFARE Token</h3> : null}
                 {
                     longTokens.map(token => {
-                        return <label className="longToken">{token}</label>
+                        return <input type="text" size={14} style={{margin:"5px", backgroundColor:"white", borderRadius: "3px", border:"2px solid yellowgreen"}} disabled value={token}></input>
                     })
                 }
                 </div>
@@ -44,7 +44,7 @@ export const TokenConverter = () => {
                 {shortTokens.length > 0 ? <h3 style={{margin : "5px"}}>EM4x02 Token</h3> : null}
                 {
                     shortTokens.map(token => {
-                        return <label className="shortToken">{token}</label>
+                        return <input type="text" style={{margin: "5px", backgroundColor:"white", borderRadius: "3px", border:"2px solid yellowgreen"}} disabled value={token}></input>
                     })
                 }
                 </div>
